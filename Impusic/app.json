@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Impusic",
+    "slug": "Impusic",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
