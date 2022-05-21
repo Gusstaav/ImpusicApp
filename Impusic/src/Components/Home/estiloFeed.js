@@ -5,11 +5,9 @@ export const estiloFeed = StyleSheet.create({
         flex: 1,
         backgroundColor: '#212121',
     },
-    Container: {
-    marginTop: 30,
-    },
+    
     Video: {
-    height: 150,
+    height: 170,
     width: '100%',
     },
     tituloVideo:{

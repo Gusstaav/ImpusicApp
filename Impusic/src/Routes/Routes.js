@@ -15,15 +15,6 @@ export default function Routes(){
     return(
         <Tab.Navigator
         screenOptions={{
-            headerTitle: "Impusic",
-            headerTitleAlign: 'center',
-            headerTitleStyle:{
-                color: '#fff',
-            },
-            headerStyle: {
-            backgroundColor: '#4a4a4a',
-            borderBottomColor: 'transparent',
-            },
             tabBarStyle: { 
                 backgroundColor: '#121212', 
                 borderTopColor: 'transparent',

@@ -23,27 +23,27 @@ export default function RotasTab(){
                 backgroundColor : '#121212' , 
                 borderTopColor : 'transparent' ,
             },
+            tabBarLabelStyle:{
+                color: 'blue',
+                height: 0,
+            },
            
-            tabBarLabelStyle : {
-                fontFamily : 'Arial' ,
-                fontSize : 12 ,
-            } ,
-            tabBarActiveTintColor : '#939' ,
+            tabBarActiveTintColor : '#fff' ,
             tabBarInactiveTintColor: '#878787',
         }}>
 
             <RotasDashBoard.Screen name="Feed" component={Feed} 
             options={{
                 tabBarLabel:  '',
-                tabBarIcon: ({size, color}) => (
-                    <Feather name="home" size={size} color={color} />
+                tabBarIcon: ({color}) => (
+                    <Entypo name="home" size={25} color={color} />
                 )
             }}
             />
             <RotasDashBoard.Screen name="Explorar" component={Explorar} options={{
                  tabBarLabel:  '',
-                tabBarIcon: ({size, color}) => (
-                    <Feather name="navigation" size={size} color={color} />
+                tabBarIcon: ({color}) => (
+                    <Entypo name="news" size={25} color={color} />
                 )
             }} 
             />
@@ -51,22 +51,22 @@ export default function RotasTab(){
              options={{
                 tabBarLabel:  '',
                 tabBarActiveTintColor: 'black',
-                tabBarIcon: ({size, color}) => (
-                    <Feather name="plus" size={20}  color={color}   style={styles.icon} />
+                tabBarIcon: ({color}) => (
+                    <Feather name="plus" size={30}  color={color}   style={styles.icon} />
                 ),
             }}
             />
             <RotasDashBoard.Screen name="Biblioteca" component={Biblioteca}  options={{
                  tabBarLabel:  '',
-                tabBarIcon: ({size, color}) => (
-                    <Entypo name="book" size={size} color={color} />
+                tabBarIcon: ({color}) => (
+                    <Entypo name="book" size={25} color={color} />
                 )
             }}
             />
             <RotasDashBoard.Screen name="Perfil" component={Perfil}  options={{
                  tabBarLabel:  '',
-                tabBarIcon: ({size, color}) => (
-                    <Feather name="user" size={size} color={color} />
+                tabBarIcon: ({color}) => (
+                    <Entypo name="user" size={25} color={color} />
                 )
             }}
             />
@@ -75,11 +75,16 @@ export default function RotasTab(){
     );
 }
 
+
+
 const styles = StyleSheet.create({
     icon:   {
-        padding: 15,
-        marginBottom: 25,
-        borderRadius: 40,
-        backgroundColor: '#C0C0C0',
+        padding: 10,
+        height: 50,
+        width: 50,
+        marginBottom: 15,
+        borderRadius: 70,
+        color: '#939',
+        backgroundColor: '#FFFAFA',
     },
 })

@@ -6,7 +6,7 @@ export const estiloBiblioteca = StyleSheet.create({
         flex: 1,
     },
     Container: {
-    marginTop: 30,
+    marginTop: 10,
     flexDirection: 'row',
     marginLeft: 5,
     padding: 5, 
@@ -18,25 +18,28 @@ export const estiloBiblioteca = StyleSheet.create({
     borderWidth: 2,
     },
     containerVideo:{
-        margin: 15,
+        marginTop: 15,
         flexDirection: 'row',
     },
+    
     Video: {
     height: 100,
     width: 120,
     marginRight: 5,
     },
+
     tituloVideo:{
     fontSize: 15,
-    marginTop: 10,
-    fontFamily: 'Arial',
     padding: 3,
     color: '#fff',
+    },
+
+    ContainerBotao:{
+        flex: 20,
     },
     estiloBotao:{
         backgroundColor: 'transparent', 
         width: 100,
         borderRadius: 20,
-        marginBottom: 450,
     },
 })

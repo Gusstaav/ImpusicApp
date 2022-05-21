@@ -8,7 +8,7 @@ import { estiloBiblioteca } from "./estiloBiblioteca";
 export default function Biblioteca ({navigation}){
     return(
         <View style={estiloBiblioteca.Geral}> 
-         <ScrollView  horizontal={true}  >
+         <ScrollView  horizontal={true}>
             <View style={estiloBiblioteca.Container}>
 
                     <View style={estiloBiblioteca.containerVideo}>
@@ -43,16 +43,16 @@ export default function Biblioteca ({navigation}){
                     </View>
                 </View>
        </ScrollView>
-                
+        <View style={estiloBiblioteca.ContainerBotao}>
        <Feather name="book" size={12} color={'#fff'} style={{margin: 30,}} >
+            
             <TouchableOpacity 
             style={estiloBiblioteca.estiloBotao} 
             onPress={() => navigation.navigate ('Historico')}>
-            
             <Text style={{color: '#fff',}}>  Historico</Text>
-
-            </TouchableOpacity>
+            </TouchableOpacity>    
         </Feather>
+        </View>
        </View>
     );
 }

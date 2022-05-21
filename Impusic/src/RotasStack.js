@@ -15,15 +15,16 @@ export default function Routes(){
     return(
         <Stack.Navigator screenOptions={{
             headerShown: true,
+
             headerTitle : "Impusic" ,
+
             headerTitleAlign : 'center' ,
-            headerTintColor: '#939',
-            headerTitleStyle : {
-                fontFamily: 'Arial',
-            } ,
+
+            headerTintColor: '#936',
+
             headerStyle : {
-            backgroundColor : '#4a4a4a' ,
-            borderBottomColor : 'transparent' ,
+            backgroundColor : '#212121' ,
+            height: 70,
             } ,
         }}>
             <Stack.Screen name="Impusic" component={RotasTab} />

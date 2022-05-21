@@ -8,15 +8,9 @@ export const estiloExplorar = StyleSheet.create({
     container: {
         flexDirection: 'row',
         margin: 5,
-        border: 'solid',
-        borderTopColor: '#fff',
-        borderBottomColor: '#fff',
-        borderLeftColor: 'transparent',
-        borderRightColor: 'transparent',
-        borderWidth: 1,
     },
+    
     video: {
-        
         width: '50%', 
         height: 150,
     },
