@@ -4,11 +4,12 @@ import { StyleSheet } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {Entypo, Feather} from '@expo/vector-icons';
 
-import Feed from '../Components/Home/Feed'
+import Feed from '../Components/Home/Feed';
 import Explorar from '../Components/Explorar/Explorar';
-import Biblioteca from '../Components/Biblioteca/Biblioteca';
 import Postar from '../Components/Postar/Postar';
+import Biblioteca from '../Components/Biblioteca/Biblioteca';
 import Perfil from '../Components/Perfil/Perfil';
+
 
 const RotasDashBoard = createBottomTabNavigator();
 
