@@ -7,8 +7,8 @@ import { StyleLogin } from '../stylesLogin-Cadastro/styleLogin';
 
 
 export default function({navigation}){
-    const [email, setEmail] = useState("");
-    const [passoword, setPassoword] = useState("");
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     const entrar = () => (
         navigation.reset({
@@ -22,18 +22,13 @@ export default function({navigation}){
             <View style={StyleLogin.container}>
                 <Text style={StyleLogin.textLogin}>Login</Text>
                 
-                <TextInput
-                style={StyleLogin.input}
-                onChangeText={value => setEmail(value)}
-                value={String}
-                placeholder="Digite seu Email"
-                 />
-                 <TextInput
-                style={StyleLogin.input}
-                onChangeText={value => setPassoword(value)}
-                value={String}
-                placeholder="Digite sua senha"
-                 />
+            <TextInput  style={StyleLogin.input}
+            placeholder="E-mail" 
+            onChangeText={setEmail} />
+            
+            <TextInput style={StyleLogin.input}
+            placeholder="Senha" 
+            secureTextEntry onChangeText={setPassword} />   
                 
                 <TouchableOpacity style={StyleLogin.Botton}
                 onPress={() => entrar()}>
