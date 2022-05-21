@@ -12,7 +12,6 @@ export const estiloFeed = StyleSheet.create({
     },
     tituloVideo:{
     fontSize: 15,
-    fontFamily: 'Arial',
     padding: 5,
     color: '#fff',
     },

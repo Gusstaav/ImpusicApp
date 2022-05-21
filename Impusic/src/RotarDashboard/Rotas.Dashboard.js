@@ -11,13 +11,19 @@ import Biblioteca from '../Components/Biblioteca/Biblioteca';
 import Perfil from '../Components/Perfil/Perfil';
 
 
+
 const RotasDashBoard = createBottomTabNavigator();
 
 export default function RotasTab(){
     return(
-        <RotasDashBoard.Navigator initialRouteName="Feed"
+        <RotasDashBoard.Navigator initialRouteName="Login"
          screenOptions={{
-           headerShown: false,
+           headerShown: true,
+           headerTitle: "Impusic",
+           headerStyle:{
+            backgroundColor: "#1C1C1C",
+           },
+           headerTintColor: "#938",
          
            tabBarStyle : { 
                 backgroundColor : '#121212' , 
@@ -47,6 +53,7 @@ export default function RotasTab(){
                 )
             }} 
             />
+             
             <RotasDashBoard.Screen name="Postar" component={Postar} 
              options={{
                 tabBarLabel:  '',

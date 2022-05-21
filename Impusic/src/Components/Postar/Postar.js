@@ -5,13 +5,13 @@ import {Entypo, Feather} from '@expo/vector-icons';
 
 export default function Postar(){
     return(
-
+        
         <View style={estiloPostar.Container}>
                 
             <TouchableOpacity style={estiloPostar.Botao}>
-            <Feather name="share" style={estiloPostar.iconStyle} >
+            <Entypo name="upload" style={estiloPostar.iconStyle} >
                 <Text style={estiloPostar.textoBotao}>Postar</Text>
-            </Feather>
+            </Entypo>
             </TouchableOpacity>
             
         </View>
