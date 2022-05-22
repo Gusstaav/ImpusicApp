@@ -20,8 +20,6 @@ export const estiloPostar = StyleSheet.create({
     iconStyle: {
         color: '#fff',
         padding: 10,
-        border: 'solid',
-        borderColor: '#fff',
         borderRadius: 10,
     },
 })
