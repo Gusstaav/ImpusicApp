@@ -18,11 +18,10 @@ export default function Routes(){
     return(
         <Stack.Navigator 
          screenOptions={{
-            headerShown: false,
 
             headerTitle : "Impusic" ,
 
-            headerTitleAlign : 'center' ,
+            headerTitleAlign : 'left' ,
 
             headerTintColor: '#936',
 

@@ -18,7 +18,7 @@ export default function RotasTab(){
     return(
         <RotasDashBoard.Navigator initialRouteName="Login"
          screenOptions={{
-           headerShown: true,
+           headerShown: false,
            headerTitle: "Impusic",
            headerStyle:{
             backgroundColor: "#1C1C1C",
@@ -46,13 +46,7 @@ export default function RotasTab(){
                 )
             }}
             />
-            <RotasDashBoard.Screen name="Explorar" component={Explorar} options={{
-                 tabBarLabel:  '',
-                tabBarIcon: ({color}) => (
-                    <Entypo name="news" size={25} color={color} />
-                )
-            }} 
-            />
+            
              
             <RotasDashBoard.Screen name="Postar" component={Postar} 
              options={{
@@ -63,13 +57,7 @@ export default function RotasTab(){
                 ),
             }}
             />
-            <RotasDashBoard.Screen name="Biblioteca" component={Biblioteca}  options={{
-                 tabBarLabel:  '',
-                tabBarIcon: ({color}) => (
-                    <Entypo name="book" size={25} color={color} />
-                )
-            }}
-            />
+            
             <RotasDashBoard.Screen name="Perfil" component={Perfil}  options={{
                  tabBarLabel:  '',
                 tabBarIcon: ({color}) => (
